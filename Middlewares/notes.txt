@@ -1,0 +1,29 @@
+1. Basic Middleware with Next
+
+2. Utility Middleware 
+
+logger: logs/prints useful info on console.
+
+3. app.use Specified Callback
+
+    # Two arguments: path, Callback ('/path', () => callback)
+    # Callback functions can be
+        *A middleware function.
+        *A series of middleware functions (separated by commas).
+        *An array of middleware functions.
+        *A combination of all of the above.
+
+4. API Token as Query String
+
+    # Let's create a middle-ware for an api that checks if the access token was passed in the query string or not.
+
+    if /api?token=give access  res => data
+    if /api?token=No access  res => error
+
+5. Multiple Middlewares
+    # passing middleware as a function
+
+6. Error Handling (Express Default)
+    # next() => calling simple non-error handling middlewares
+    # next(err) => calling error handling middlewares
+    
