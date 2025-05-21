@@ -1,0 +1,15 @@
+1. Error Handling (Express Default)
+    # next() => calling simple non-error handling middlewares
+    # next(err) => calling error handling middlewares
+
+2. Custom Error Classes
+    # creating seperate class for Error-Handling
+    # inheriting in-built express Error class
+
+3. Default Status and Message
+    # status=500, message="Some Error Occurred"
+    # defualt values if not given already
+
+4. Activity
+    # Create an admin route & send an error with a 403 status code.
+    
